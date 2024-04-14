@@ -1,0 +1,67 @@
+input[type='text']{
+    background-color: aqua;
+    padding: 8px 11px;
+    margin-top: 60px;
+    margin-left: 490px;
+    width: 230px;
+    outline: none;
+    border-radius: 8px;
+}
+
+.todo-item{
+    width: 400px;
+    height: 30px;
+    background-color: #fff;
+    list-style-type: none;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 420px;
+}
+
+.check-btn{
+    margin-left: 0px;
+    padding: 5px 8px;
+    margin-top: 79px;
+    background-color: rgb(55, 168, 202);
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.trash-btn{
+    margin-top: 79px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+}
+
+.select{
+    display: flex;
+    margin-top: -34px;
+    margin-left: 750px;
+    
+}
+
+.filter-todo{
+    padding: 8px 11px;
+    border-radius: 8px;
+    outline: none;
+    color: blueviolet;
+}
+
+.todo-button{
+    margin-left: -35px;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 3px;
+}
+
+body{
+    background-color: blue;
+}
+
+header{
+    text-align: center;
+    color: orange;
+    text-shadow: 5px 5px 27px red;
+}
