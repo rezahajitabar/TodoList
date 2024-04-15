@@ -28,6 +28,11 @@ input[type='text']{
     color: #fff;
 }
 
+.line{
+    text-decoration: line-through;
+    color: #aaa;
+}
+
 .trash-btn{
     margin-top: 79px;
     background-color: blueviolet;
