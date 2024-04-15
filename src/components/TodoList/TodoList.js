@@ -12,8 +12,8 @@ export default class TodoList extends Component {
     }
 
      this.addTodo = this.addTodo.bind(this)
-    // this.removeTodo = this.removeTodo.bind(this)
-    // this.editTodo = this.editTodo.bind(this)
+     this.removeTodo = this.removeTodo.bind(this)
+     this.editTodo = this.editTodo.bind(this)
      this.todoTitleHandler = this.todoTitleHandler.bind(this)
     // this.statusHandler = this.statusHandler.bind(this)
 
@@ -35,12 +35,42 @@ let newtodos={
 
 this.setState(prevState=>{
     return{
-        todos:[...this.state.todos,newtodos],
+        todos:[...prevState.todos,newtodos],
         todoTitle:""
     }
 })
 
 }
+
+removeTodo(todoId){
+let newtodo=this.state.todos.filter(todo=> {
+    return todo.id !==todoId
+})
+
+this.setState({
+    todos:newtodo
+})
+}
+
+editTodo(todoId){
+  let newtodos=[...this.state.todos];
+
+  newtodos.forEach(todo=> {
+    if(todo.id===todoId){
+        todo.completed = !todo.completed
+    }
+
+    this.setState({
+        todos:newtodos
+    })
+
+    // this.setState({
+    //     todos:newtodos
+    // })
+  })
+}
+
+
 
 render() {
     return (
@@ -63,7 +93,7 @@ render() {
             <div className="todo-container">
                 <ul className="todo-list">
                     {this.state.todos.map(todo=> (
-                       <Todo {...todo} />
+                       <Todo key={todo.id} {...todo} onRemove={this.removeTodo} onEdit={this.editTodo}/>
                     ))}
                       
                     

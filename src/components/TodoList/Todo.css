@@ -29,6 +29,10 @@ input[type='text']{
 }
 
 .line{
+   
+}
+
+.completed{
     text-decoration: line-through;
     color: #aaa;
 }
