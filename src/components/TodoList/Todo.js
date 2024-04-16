@@ -13,7 +13,7 @@ export default class Todo extends Component {
   render() {
     return (
       <div>
-            <div className={`todo ${this.props.comleted ? "completed" : ""}`} style={{ display: 'flex' }}>
+            <div className={`todo ${this.props.comleted ? 'completed' : 'line'}`} style={{ display: 'flex' }}>
                 <li className="todo-item">{this.props.title}</li>
 
                 <button className="check-btn" onClick={this.editHandler.bind(this,this.props.id)}>

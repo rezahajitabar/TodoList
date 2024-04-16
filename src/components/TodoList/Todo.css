@@ -14,14 +14,14 @@ input[type='text']{
     background-color: #fff;
     list-style-type: none;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: 420px;
 }
 
 .check-btn{
     margin-left: 0px;
     padding: 5px 8px;
-    margin-top: 79px;
+    margin-top: 20px;
     background-color: rgb(55, 168, 202);
     outline: none;
     border: none;
@@ -29,7 +29,7 @@ input[type='text']{
 }
 
 .line{
-   
+    text-decoration: none;
 }
 
 .completed{
@@ -38,7 +38,7 @@ input[type='text']{
 }
 
 .trash-btn{
-    margin-top: 79px;
+    margin-top: 20px;
     background-color: blueviolet;
     color: #fff;
     border: none;
